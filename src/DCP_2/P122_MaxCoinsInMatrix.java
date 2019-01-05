@@ -7,7 +7,7 @@ package DCP_2;
 
 /**
  * Zillow
- * @author lenovo
+ * @author SHUBHAM
  * You are given a 2-d matrix where each cell represents number of coins in that cell. Assuming we start at matrix[0][0], and can only move right or down, find the maximum number of coins you can collect by the bottom right corner.
     For example, in this matrix
     0 3 1 1
@@ -37,9 +37,7 @@ public class P122_MaxCoinsInMatrix
         if (m==0 && n==0) {
             return mat[m][n];
         }
-        else {
-            return Math.max(maxCoins(mat, m-1, n), maxCoins(mat, m, n-1)) + mat[m][n];
-        }
+        return Math.max(maxCoins(mat, m-1, n), maxCoins(mat, m, n-1)) + mat[m][n];
     }
     
 }
