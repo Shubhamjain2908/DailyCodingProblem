@@ -66,7 +66,6 @@ public class P258_BoustrophedonOrder {
         l.add(root);
         if (map.containsKey(level)) {
             l.addAll(map.get(level));
-            map.put(level, l);
         }
         map.put(level, l);
         if (root.left != null) {
