@@ -13,7 +13,11 @@ package Trie;
  */
 public class Trie 
 {
-    static TrieNode root;
+    private static TrieNode root;
+
+    public static TrieNode getRoot() {
+        return root;
+    }
     
     public Trie()
     {
